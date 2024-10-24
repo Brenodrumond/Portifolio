@@ -1,0 +1,255 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    background-color: #312E2E;
+    /* Adicionando a cor cinza ao header */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    gap: 10px;
+    /* Espaçamento entre os botões */
+    flex-grow: 1;
+    /* Permite que o nav ocupe o espaço disponível */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    /* Adiciona o posicionamento absoluto para os botões */
+    top: 10px;
+    /* Posiciona os botões no topo */
+    right: 20px;
+    /* Posiciona os botões à direita */
+}
+
+/* Tema claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode header {
+    background-color: #312E2E;
+}
+
+/* Tema escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #333333;
+}
+
+.switch-container {
+    position: relative;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.light-mode button {
+    background-color: #312E2E;
+
+}
+
+.dark-mode button {
+
+    background-color: #333333;
+
+}
+
+
+.btn {
+    background-color: #312E2E;
+    fill: #000000;
+}
+
+#btn_nav {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+#btn_nav:hover {
+    color: #E5C208;
+}
+
+.titulo {
+    color: #E5C208;
+}
+
+
+
+
+.text1 {
+    padding-left: 600px;
+    text-align: center;
+    width: 500px;
+    padding-top: 5px;
+    
+}
+
+.cinza_baixo {
+   
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    display: grid;
+       background-color: #312E2E;
+    position: fixed;
+    bottom: 0;
+}
+
+#telefone{
+    padding-left: 1300px;
+}
+
+#email{
+    padding-left: 10px;
+}
+
+.img1{
+    height: 300px;
+    width: 400px;
+    padding-left: 20px;
+    margin-top: 20px;
+    transition: 0.5s; 
+    filter: brightness(100%); 
+}
+
+.img2{
+    height: 300px;
+    width: 400px;
+    padding-left: 50px;
+    margin-top: 20px;
+    transition: 0.5s; 
+    filter: brightness(100%); 
+}
+
+
+.img3{
+    height: 300px;
+    width: 400px;
+    padding-left: 50px;
+    margin-top: 20px;
+    transition: 0.5s; 
+    filter: brightness(100%); 
+}
+
+.img4{
+    height: 300px;
+    width: 400px;
+    padding-left: 50px;
+    margin-top: 20px;
+    transition: 0.5s; 
+    filter: brightness(100%); 
+}
+
+
+.img1:hover{
+
+    width: 500px;
+    height: 400px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.img2:hover{
+
+    width: 500px;
+    height: 400px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.img3:hover{
+
+    width: 500px;
+    height: 400px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.img4:hover{
+
+    width: 500px;
+    height: 400px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+@media (max-width:500px){
+
+    
+    
+}
